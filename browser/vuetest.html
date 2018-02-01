@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="root">
+
+      <p>
+        <input v-model="message">
+      </p>
+      <p>
+        {{message}}
+      </p>
+      </div>
+    <script>
+      console.log("Vue version", Vue.version);
+      var app = new Vue(
+        {
+          name: 'MyApp',
+          el: '#root',
+          data() {
+            return {
+              message: 'Hello',
+              name: 'Bob'
+            }
+          }
+        }
+      );
+    </script>
+  </body>
+</html>
