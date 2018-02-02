@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 import json
 
-with open('..data/graph.json') as f:
+with open('../data/graph.json') as f:
     graph = json.load(f)
 
 @app.route('/')
